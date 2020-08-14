@@ -1,4 +1,4 @@
-package com.jstechnologies.numberkeypad;
+package com.jstechnologies.numberkeypadview;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -9,9 +9,7 @@ import android.graphics.drawable.Drawable;
 import android.text.InputFilter;
 import android.text.InputType;
 import android.util.AttributeSet;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -24,7 +22,7 @@ public class NumberKeypadView extends LinearLayout {
 
 
     //Default KeyPadType
-    private int _keyPadType=KeyPadType.ROUNDED_BORDER;
+    private int _keyPadType= KeyPadType.ROUNDED_BORDER;
     private int _layoutBackground,_keyBackground,_hintTexTColor,_textColor,_maxLength,_backSpaceDrawable;
     int _keyTextColor;
     private boolean _isHidden=false;
@@ -102,7 +100,7 @@ public class NumberKeypadView extends LinearLayout {
                 0, 0);
 
         try {
-            _keyPadType=a.getInt(R.styleable.NumberKeypadView_keyType,KeyPadType.ROUNDED_BORDER);
+            _keyPadType=a.getInt(R.styleable.NumberKeypadView_keyType, KeyPadType.ROUNDED_BORDER);
             _keyBackground=a.getResourceId(R.styleable.NumberKeypadView_keyBackground, 0);
             _layoutBackground=a.getResourceId(R.styleable.NumberKeypadView_layoutBackground, 0);
             _backSpaceDrawable=a.getResourceId(R.styleable.NumberKeypadView_BackspaceDrawable, R.drawable.ic_outline_backspace);
@@ -176,7 +174,7 @@ public class NumberKeypadView extends LinearLayout {
         text.setHintTextColor(_hintTexTColor);
         text.setTextColor(_textColor);
     }
-    View.OnClickListener _buttonClickListener= new OnClickListener() {
+    OnClickListener _buttonClickListener= new OnClickListener() {
         @Override
         public void onClick(View view) {
             Button button= findViewById(view.getId());
@@ -187,7 +185,7 @@ public class NumberKeypadView extends LinearLayout {
                 onEntryComplete.onComplete(text.getText().toString().trim());
         }
     };
-    View.OnClickListener _backspaceClickListener= new OnClickListener() {
+    OnClickListener _backspaceClickListener= new OnClickListener() {
         @Override
         public void onClick(View view) {
             int length = text.getText().length();
