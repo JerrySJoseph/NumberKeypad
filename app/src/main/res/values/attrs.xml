@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NumberKeypadView">
+        <attr name="keyType" format="enum">
+            <enum name="ROUNDED_BORDER" value="1"/>
+            <enum name="BOXED_BORDER" value="2"/>
+            <enum name="ROUNDED_SOLID" value="3"/>
+            <enum name="BOXED_SOLID" value="4"/>
+            <enum name="CUSTOM" value="5"/>
+            <enum name="NONE" value="6"/>
+        </attr>
+        <attr name="keyColor" format="color"/>
+        <attr name="keyBackground" format="reference"/>
+        <attr name="keyTextColor" format="color"/>
+        <attr name="layoutBackground" format="reference"/>
+        <attr name="Hint" format="string"/>
+        <attr name="TextSize" format="dimension"/>
+        <attr name="TextHidden" format="boolean"/>
+        <attr name="BackspaceDrawable" format="reference"/>
+        <attr name="maxLength" format="integer"/>
+        <attr name="TextHintColor" format="color"/>
+        <attr name="TextColor" format="color"/>
+    </declare-styleable>
+</resources>

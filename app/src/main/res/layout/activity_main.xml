@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.jstechnologies.numberkeypad.NumberKeypadView
+        android:id="@+id/numberkeypad"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:keyType="NONE"
+        app:keyTextColor="@color/colorPrimary"
+        app:TextColor="@color/colorPrimary"
+        app:TextHintColor="@android:color/darker_gray"
+        app:TextSize="12dp"
+        app:BackspaceDrawable="@drawable/ic_outline_backspace"
+        app:TextHidden="true"
+        app:Hint="Please Enter the Password"
+        />
+
+</LinearLayout>
