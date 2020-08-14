@@ -6,6 +6,8 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.jstechnologies.numberkeypadview.NumberKeypadView;
+
 public class MainActivity extends AppCompatActivity {
 
     NumberKeypadView keypadView;

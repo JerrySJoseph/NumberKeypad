@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.jstechnologies.numberkeypad.NumberKeypadView
+    <com.jstechnologies.numberkeypadview.NumberKeypadView
         android:id="@+id/numberkeypad"
         android:layout_gravity="bottom"
         android:layout_width="match_parent"
@@ -18,8 +18,8 @@
         app:TextSize="12dp"
         app:BackspaceDrawable="@drawable/ic_outline_backspace"
         app:TextHidden="true"
-        app:Hint="Please Enter the Password"
-        />
+        app:Hint="Please Enter the Password"/>
+
 
 
 </LinearLayout>
