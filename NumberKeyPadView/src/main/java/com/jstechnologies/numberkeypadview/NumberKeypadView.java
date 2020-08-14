@@ -181,7 +181,7 @@ public class NumberKeypadView extends LinearLayout {
             text.append(button.getText());
             if(onKeyPressListener!=null)
                 onKeyPressListener.onPressed(view.getId(),button.getText().toString());
-            if(text.length()>=_maxLength && onEntryComplete !=null)
+            if(view.getId()!=R.id.backspace&&text.length()>=_maxLength && onEntryComplete !=null)
                 onEntryComplete.onComplete(text.getText().toString().trim());
         }
     };

@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:keyType="NONE"
+        app:maxLength="6"
         app:keyTextColor="@color/colorPrimary"
         app:TextColor="@color/colorPrimary"
         app:TextHintColor="@android:color/darker_gray"
